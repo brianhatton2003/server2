@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: Flask (port 5001)", //for some reason, I could only get the website opened in port 5001, this is probably the most jank part of the code tbh
+        "type": "python",
+        "request": "launch",
+        "module": "flask",
+        "env": {
+          "FLASK_APP": "website.py",
+          "FLASK_ENV": "development"
+        },
+        "args": ["run", "--port", "5001"],
+        "jinja": true,
+        "console": "integratedTerminal" 
+      }
+    ]
+  }
+
+//The only reason this is flagged is because "type": "python" (line 6) is outdated, still got the website to launch though so idk
